@@ -1,0 +1,53 @@
+//Plays "FizzBuzz", a children's game where multiples of 3 you say fizz,
+//multiples of 5 you say buzz, and on multiples of both you say fizzbuzz
+
+var f = false
+var b = false
+
+for (var i = 1; i <= 100; i++) {
+
+//Resets values
+
+ f = false
+ b = false
+
+//Changes values
+
+if(i % 3 == 0) {
+f = true
+}
+
+if(i % 5 == 0){
+b = true
+}
+
+//Logs to console
+
+if (f == true) {
+if (b == false) {
+console.log("fizz")
+}
+}
+
+else if (b == true) {
+  if (f == false){
+    console.log("buzz")
+  }
+}
+
+if (b == true) {
+  if (f == true) {
+    console.log("fizzbuzz")
+  }
+}
+
+else if (b == false) {
+  if (f == false){
+console.log(i)
+  }
+  
+}
+
+}
+
+//32 lines of actual code
